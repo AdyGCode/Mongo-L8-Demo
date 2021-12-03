@@ -91,6 +91,20 @@ return [
             'prefix_indexes' => true,
         ],
 
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'host' => env('MONGO_DB_HOST', 'localhost'),
+            'port' => env('MONGO_DB_PORT', '27017'),
+            'database' => env('DB_DATABASE', 'sail'),
+            'username' => env('MONGO_DB_USERNAME', 'sail'),
+            'password' => env('MONGO_DB_PASSWORD', ''),
+        ],
+        'mongodb-dsn' => [
+            'driver' => 'mongodb',
+            'dsn' => env('MONGO_DB_DSN'),
+            'database' => env('MONGO_DB_DATABASE', 'homestead'),
+        ],
+
     ],
 
     /*
