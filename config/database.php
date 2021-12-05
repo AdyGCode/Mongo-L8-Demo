@@ -95,14 +95,15 @@ return [
             'driver' => 'mongodb',
             'host' => env('MONGO_DB_HOST', 'localhost'),
             'port' => env('MONGO_DB_PORT', '27017'),
-            'database' => env('DB_DATABASE', 'sail'),
-            'username' => env('MONGO_DB_USERNAME', 'sail'),
+            'database' => env('MONGO_DB_DATABASE', 'sail'),
+            'username' => env('MONGO_DB_USERNAME', ''),
             'password' => env('MONGO_DB_PASSWORD', ''),
         ],
+
         'mongodb-dsn' => [
             'driver' => 'mongodb',
             'dsn' => env('MONGO_DB_DSN'),
-            'database' => env('MONGO_DB_DATABASE', 'homestead'),
+            'database' => env('MONGO_DB_DATABASE', 'sail'),
         ],
 
     ],
